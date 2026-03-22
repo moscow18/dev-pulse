@@ -4,7 +4,8 @@ import { supabase } from '@/lib/supabase';
 import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { useLang } from '@/context/LanguageContext'; // 👈 المحرك
+import { useLang } from '@/context/LanguageContext'; 
+export const dynamic = 'force-dynamic';// 👈 المحرك
 
 export default function CreatePostPage() {
   const router = useRouter();
